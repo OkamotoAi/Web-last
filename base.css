@@ -1,0 +1,148 @@
+/* panel */
+#questionArea {
+    position:relative; 
+    display:block; 
+    height:300px; border:10px solid #696969; 
+    padding:0; 
+    margin:0 10px 5px 10px; 
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#score {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#timer {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*
+#capslock {
+    display:block;
+    font-size:20px; 
+    color:#ff0000; 
+    margin-right: 30px;
+    text-align: right;    
+}
+*/
+#question {
+    display:block; 
+    font-size:30px; 
+    color:#0000ff; 
+    margin-top: 30px;
+    word-wrap:break-word;
+    text-align: center;
+}
+#input {
+    display:block; 
+    font-size:30px; 
+    line-height:36px; 
+    margin:15px auto 0; 
+    color:#000000; 
+    width:65%; 
+    word-wrap:break-word;
+    text-align: center;
+}
+
+/* board */
+#keyboardArea {
+    position:relative; 
+    display:block; 
+    height:300px; border:10px solid #696969; 
+    padding:0; 
+    margin:0 10px 5px 10px; 
+    background-color:#222222; 
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* keyboard */
+#keyboard {
+    width:100%; 
+    border-spacing:4px;
+}
+
+/*ID＝keyboardのkey-rowクラス Typing.jsnのなか　*/
+#keyboard .key-row{
+    height:40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+#keyboard .fs-key{
+    height:25px;
+}
+#keyboard .key {
+    position:relative;
+    padding:2px;
+}
+#keyboard .key.minifont{
+    font-size: 11px;
+}
+
+#keyboard .key-view{
+    background: white;
+    height:100%;
+    border-radius: 4px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+    align-items: center; /* 縦方向中央揃え */
+    -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+    justify-content: center; /* 横方向中央揃え */
+}
+#keyboard .key-view.yellow{
+    background: yellow;
+}
+#keyboard .key-view.blue{
+    background: skyblue;
+}
+
+#keyboard .key-view.twin-struct{
+    height:45%;
+    margin-bottom:5%;
+}
+/* divide key width, ref by mac keyboard */
+#keyboard .col1 { /* Alphabet, 2~9,0, minimum unit. */
+    width:6.8%;
+}
+#keyboard .col2 { /* command, control, laungage-button */
+    width:8.5%;
+}
+#keyboard .col3 { /* 1, power button */
+    width:10.8%;
+}
+#keyboard .col4 { /* shift key */
+    width:12.0%;
+}
+#keyboard .col5 { /* space key */
+    width:26.3%;
+}
+
+#keyboard .subkey {
+    position:absolute; 
+    top:3px; 
+    right:5px; 
+    line-height:12.5px; 
+    height:12px; 
+    font-size:10px;
+}
+
+
+*{
+    font-family:"ヒラギノ角ゴシック";
+}
