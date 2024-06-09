@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="ja"></html>
+<head></head>
+<meta charset="utf-8">
+<title></title>
+<script></script>
+function func(){}
+var elm = document.getElementById("id");
+<body></body>
+<input id="tx1" type="text">
+<button onclick="setValue();"></button>
